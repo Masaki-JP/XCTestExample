@@ -5,6 +5,8 @@
 //  Created by KAWASHIMA Yoshiyuki on 2021/08/19.
 //
 
+
+
 import Foundation
 
 struct Counter {

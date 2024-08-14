@@ -3,10 +3,6 @@ name: CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main, feature/* ]
-
-  workflow_dispatch:
 
 jobs:
   build:
@@ -18,7 +14,3 @@ jobs:
       - name: Test
         run: xcodebuild test -project XCTestExample.xcodeproj/ -scheme XCTestExample -resultBundlePath TestResults -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14"
         
-      - uses: kishikawakatsumi/xcresulttool@v1
-        with:
-          path: TestResults.xcresult
-        if: success() || failure()

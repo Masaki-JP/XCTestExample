@@ -20,7 +20,8 @@ class XCTestExampleTests: XCTestCase {
 
     func testCounterPlus() throws {
         let num: Int? = nil
-        let unwrapedNum = XCTUnwrap(num, message: "あいうえお")
+        let unwrapedNum = try XCTUnwrap(num, "カキクケコ")
+//        let unwrapedNum = try XCTUnwrap(num, "aiu", file: "a", line: 9)
 
         var counter = Counter()
         counter.plus()

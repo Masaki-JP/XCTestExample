@@ -19,6 +19,9 @@ class XCTestExampleTests: XCTestCase {
     }
 
     func testCounterPlus() throws {
+        let num: Int? = nil
+        let unwrapedNum = num!
+
         var counter = Counter()
         counter.plus()
         XCTAssertEqual(counter.count, 1)

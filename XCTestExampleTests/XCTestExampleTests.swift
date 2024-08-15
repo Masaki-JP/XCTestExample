@@ -21,7 +21,7 @@ class XCTestExampleTests: XCTestCase {
     func testCounterPlus() throws {
         var counter = Counter()
         counter.plus()
-        XCTAssertEqual(counter.count, 0)
+        XCTAssertEqual(counter.count, 1)
     }
     
     func testCounterMinus() throws {
